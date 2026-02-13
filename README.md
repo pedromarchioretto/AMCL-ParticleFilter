@@ -1,0 +1,3 @@
+# Monte Carlo Particle Filter
+
+Este projeto implementa um Filtro de Partículas baseado no Método de Monte Carlo para localização estimativa via Pygame. O sistema propaga o deslocamento da odometria do agente para uma nuvem de partículas, validando cada hipótese através de uma matriz de ocupação binária. Partículas que resultam em estados geometricamente impossíveis (sobreposição em obstáculos) são removidas definitivamente da memória, convergindo o conjunto de dados para as trajetórias viáveis no mapa.
