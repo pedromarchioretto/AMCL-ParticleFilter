@@ -133,18 +133,6 @@ while True:
             if dy < 0: jogador.top = p.bottom
 
 
-    for p in paredes_colisao:
-        if jogador.colliderect(p):
-            if dx > 0: jogador.right = p.left
-            if dx < 0: jogador.left = p.right
-    
-    dy = (keys[pygame.K_DOWN] - keys[pygame.K_UP]) * vel
-    jogador.y += dy
-    for p in paredes_colisao:
-        if jogador.colliderect(p):
-            if dy > 0: jogador.bottom = p.top
-            if dy < 0: jogador.top = p.bottom
-
     deslocamento_pontos.x += (jogador.x - pos_antiga_x)
     deslocamento_pontos.y += (jogador.y - pos_antiga_y)
 
